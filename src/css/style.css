@@ -5,6 +5,7 @@ nav{
 	width: 100%;
 	height: 60px;
 	background: #263244;
+	position: fixed;
 }
 
 .logo{
@@ -13,6 +14,7 @@ nav{
 	line-height: 60px;
 	padding-left: 388px;
 	float: left;
+	animation: comming 2s ease; 
 }
 .menu{
 	float: left;
@@ -24,11 +26,12 @@ nav{
 	color: #fff;
 	margin-right: 15px;
 	text-transform: uppercase;
-
+	animation: topshift 0.5s ease forwards;
+	opacity: 0;
 }
 .main{
 	width: 100%;
-	height: calc(100%-60px);
+	height: 100%;
 	background:url(../img/boy.png)90% 100%/auto no-repeat ,url(../img/bg.jpg) center/cover no-repeat; 
 	padding-bottom: 1000px;
 }
@@ -37,6 +40,9 @@ nav{
 	margin: 432px 0px 0px 300px;
 	color: #2c384a;
 	text-align: center;
+	animation: tittlemove 1s ease forwards;
+	animation-delay: 3s;
+	opacity: 0;
 }
 .tittle_container h1{
 	font-size: 60px;
@@ -58,27 +64,121 @@ nav{
 	padding: 0px 16px;
 	margin:58px 14px 0px 14px; 
 }
+
+.menu li a{
+	color: white;
+	transition: all 0.5s;
+	transform: scale(1);
+	display: inline-block; 
+
+}
+.menu li a:hover{
+	color: yellow;
+	
+}
+.menu li a:active{
+	transform: scale(1.1);
+}
+
+.tittle_container input{
+	transition: all 0.5s;
+	transform: scale(1);
+}
+.tittle_container input:hover{
+	background: #344051;
+	color: white;
+}
+
+.tittle_container input:active{
+	transform: scale(1.1);
+}
+
+@keyframes comming{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes topshift{
+	from{
+		opacity: 0;
+		margin-top:-80px; 
+	}
+	to{
+		opacity: 1;
+		margin-top:0px; 
+	}
+}
+
+@keyframes tittlemove{
+	from{
+		opacity: 0;
+		margin-left:-500px; 
+	}
+	to{
+		opacity: 1;
+		margin-left:300px; 
+	}
+}
+
+
+
+
+.menu li:nth-child(2){
+	animation-delay:0.5s; 
+}
+.menu li:nth-child(3){
+	animation-delay:1s; 
+}
+.menu li:nth-child(4){
+	animation-delay:1.5s; 
+}
+.menu li:nth-child(5){
+	animation-delay:2s; 
+}
+.menu li:nth-child(6){
+	animation-delay:2.5s; 
+}
+
+
 .summary{
 	padding: 100px 0px 100px 0px;
 	
 }
 
 .about_me{
-	text-align: center;
-	padding-bottom: 50px;
+	margin-left: 680px;
 	font-size: 30px;
+	margin-bottom: 50px;
 	color: #263244;
 	font-weight: bold;
+	border: 2px solid #fff;
+	padding: 2px 10px;
+	width: 170px;
+	height: 40px;
+	transition: all 1.5s;
 }
+
+
+.about_me:hover{
+	border: 2px solid #d17700;
+	border-radius: 5%;
+	background: #d17700;
+}
+
+
 .photo{
 	max-width: 200px;
 	padding: 0px 0px 20px 660px;
+
 }
+
 .text-about_me{
 	text-align: start;
 	display: block;
 	padding-left: 350px;
-
 }
 .text-about_me p{
 	margin-bottom: 20px;
@@ -95,7 +195,19 @@ nav{
 	font-size: 13px;
 	margin-left: 360px;
 	padding: 0px 10px;
+	transition: all 0.5s;
+	transform: scale(1);
 }
+.text-about_me input:hover{
+	background: #344051;
+	color: white;
+}
+.text-about_me input:active{
+	transform: scale(1.1);
+}
+
+
+
 .my_skills{
 	width: 100%;
 	background:url(../img/bg1.jpg) center/cover no-repeat;
@@ -105,6 +217,12 @@ nav{
 	padding-top: 50px;
 	font-size: 30px;
 	color: #263244;
+	transform:scale(1);
+	transition:all 1.5s;  
+}
+.tittle-my_skills:hover{
+transform:scale(2); 
+
 }
 .tittle-my_skills h3{
 	font-weight: bold;
@@ -119,10 +237,42 @@ nav{
 	text-align: center;
 	margin-left: 80px;
 	padding-left: 50px; 
+	
 }
+
+
+@keyframes move{
+	from{
+		opacity: 0;
+		
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+
+
 .photo_web-development,.photo_development,.photo_optimization,.photo_marketing{
 	padding-bottom: 40px;
+	animation: move  3s alternate infinite;
 }
+.photo_web-development{
+	animation-delay: 0.5s;
+}
+.photo_development{
+	animation-delay: 1s;
+}
+.photo_optimization{
+	animation-delay: 1.5s;
+}
+.photo_marketing{
+	animation-delay: 2.5s;
+}
+
+
+
+
 .text_web-development h4,.text_development h4,.text_optimization h4,.text_marketing h4{
 	color: #cf7600;
 	padding-bottom: 10px;
@@ -141,7 +291,17 @@ nav{
 	font-size: 30px;
 	padding-bottom: 70px;
 	font-weight: bold;
+	transform:scale(1);
+	transition:all 1.5s;  
 }
+.tittle_cases h3:hover{
+transform:scale(1.5); 
+margin-right: 650px;
+}
+
+
+
+
 .tittle_cases h5 {
 	margin-left: 370px;
 	color: #263244;
@@ -186,6 +346,11 @@ nav{
 	color:#ffffff;
 	font-size: 18px;
  	padding: 0px 20px;
+    transition: all 0.5s;
+	transform: scale(1);
+}
+.link_cases input:active{
+	transform: scale(1.1);
 }
 
 
@@ -203,7 +368,16 @@ nav{
 	margin-bottom: 50px;
 	font-size: 30px;
 	font-weight: bold;
+transform:scale(1);
+	transition:all 1.5s;  
 }
+.tittle_price h2:hover{
+transform:scale(1.5); 
+margin-right: 500px;
+}
+
+
+
 .tittle_price h4{
 	margin-bottom: 10px;
 	font-size: 20px;
@@ -223,7 +397,7 @@ nav{
 }
 .statistics{
 	width: 100%;
-	background:url(../img/bg2.jpg) center/cover no-repeat;
+	background:url(../img/bg2.jpg) center/cover no-repeat fixed;
 }
 .tittle-statistics{
 	text-align: center;
@@ -231,7 +405,17 @@ nav{
 	font-size: 30px;
 	color: #263244;
 	font-weight: bold;
+	transform:scale(1);
+	transition:all 1.5s;  
 }
+.tittle-statistics:hover{
+transform:scale(1.5); 
+}
+
+
+
+
+
 .main-statistics{
 	padding: 120px 0px 100px 0px;
 }
@@ -262,11 +446,19 @@ text-align: center;
 	padding-bottom: 50px;
 	font-size: 30px;
 	font-weight: bold;
+transform:scale(1);
+	transition:all 1.5s;  
 }
+.heading_Review:hover{
+transform:scale(1.5); 
+}
+
+
 .photo_Review{
 	text-align: center;
-	padding-bottom: : 20px;
+	padding-bottom: 20px;
 }
+
 .text-Review{
 	text-align: center;
 	padding-top: 35px;
@@ -274,6 +466,7 @@ text-align: center;
 .text-Review p{
 	padding-bottom: 40px;
 }
+
 .contacts{
 	width: 100%;
 	padding: 100px 0px 70px 0px;
@@ -285,7 +478,14 @@ text-align: center;
 	font-size: 30px;
 	padding-bottom: 70px;
 	font-weight: bold;
+	transform:scale(1);
+	transition:all 1.5s;  
 }
+.tittle_contacts:hover{
+transform:scale(1.5); 
+}
+
+
 .text_contacts{
 	text-align: center;
 }
@@ -299,7 +499,14 @@ text-align: center;
 }
 .location_photo,.mail_photo,.phone_photo{
 	padding: 50px 0px 20px 0px; 
+	transform: scale(1);
+	transition: all 1s;
 }
+.location_photo:hover,.mail_photo:hover,.phone_photo:hover{
+	transform: scale(1.5);
+}
+
+
 .message{
 	padding-top: 40px;
 	text-align: center;
@@ -327,7 +534,20 @@ text-align: center;
 	color: #ffffff;
 	font-size: 16px;
 	padding: 4px 16px;
+  transition: all 0.5s;
+	transform: scale(1);
 }
+.send input:hover{
+	background: #d17700;
+	color: white;
+}
+.send input:active{
+	transform: scale(1.1);
+}
+
+
+
+
 .maps{
 	width: 100%;
 	padding: 140px 0px 160px 0px;
@@ -340,11 +560,97 @@ text-align: center;
 	color:#000000;
 	font-size: 16px;
 	padding: 4px 16px;
+	 transition: all 0.5s;
+	transform: scale(1);
+}
+.maps-location input:hover{
+	background: #d17700;
+	color: white;
+}
+.maps-location input:active{
+	transform: scale(1.1);
 
+}
+footer{
+	width: 100%;
+	height: 60px;
+	background: #263244;
 }
 .footer-text{
 	color: #fff;
 	font-size: 14px;
 	line-height: 60px;
 	padding-left: 600px;
+}
+
+
+/*Загузчик*/
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
 }
