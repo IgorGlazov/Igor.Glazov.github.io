@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 body{
 	font-family: Arial, sans-serif;
 }
@@ -6,19 +7,24 @@ nav{
 	height: 60px;
 	background: #263244;
 	position: fixed;
+	z-index: 10;
 }
+
+section{
+	padding: 100px 0px;
+}
+
 
 .logo{
 	color: #fff;
 	font-size: 28px;
 	line-height: 60px;
-	padding-left: 388px;
+	
 	float: left;
 	animation: comming 2s ease; 
 }
 .menu{
 	float: left;
-	padding-left: 320px;
 }
 .menu li{
 	float: left;
@@ -28,6 +34,7 @@ nav{
 	text-transform: uppercase;
 	animation: topshift 0.5s ease forwards;
 	opacity: 0;
+	font-size: 14px;
 }
 .main{
 	width: 100%;
@@ -37,15 +44,17 @@ nav{
 }
 .tittle_container{
 	float: left;
-	margin: 432px 0px 0px 300px;
+	
 	color: #2c384a;
 	text-align: center;
+	width: 100%;
 	animation: tittlemove 1s ease forwards;
 	animation-delay: 3s;
 	opacity: 0;
 }
 .tittle_container h1{
-	font-size: 60px;
+	font-family: Arial,sans-serif;
+	font-size: 72px;
 	font-weight: bold;
 }
 .tittle_container h4{
@@ -119,7 +128,7 @@ nav{
 	}
 	to{
 		opacity: 1;
-		margin-left:300px; 
+		margin-left: 0px; 
 	}
 }
 
@@ -144,20 +153,17 @@ nav{
 
 
 .summary{
-	padding: 100px 0px 100px 0px;
+	
 	
 }
 
 .about_me{
-	margin-left: 680px;
 	font-size: 30px;
-	margin-bottom: 50px;
 	color: #263244;
 	font-weight: bold;
 	border: 2px solid #fff;
 	padding: 2px 10px;
-	width: 170px;
-	height: 40px;
+	
 	transition: all 1.5s;
 }
 
@@ -166,34 +172,33 @@ nav{
 	border: 2px solid #d17700;
 	border-radius: 5%;
 	background: #d17700;
+	width: 170px;
+	height: 40px;
 }
 
 
 .photo{
-	max-width: 200px;
-	padding: 0px 0px 20px 660px;
+
 
 }
 
 .text-about_me{
-	text-align: start;
+	text-align: justify;
 	display: block;
-	padding-left: 350px;
+	
 }
 .text-about_me p{
-	margin-bottom: 20px;
+	
 	color: #6d7682;
-	font-size: 17px;
+	font-size: 15px;
 }
 .text-about_me input{
 	height: 40px;
-	text-align: center;
 	border: 2px solid #6d7682;
 	background: none;
 	border-radius:5px;
 	color: #6d7682;
 	font-size: 13px;
-	margin-left: 360px;
 	padding: 0px 10px;
 	transition: all 0.5s;
 	transform: scale(1);
@@ -207,14 +212,12 @@ nav{
 }
 
 
-
 .my_skills{
-	width: 100%;
+	
 	background:url(../img/bg1.jpg) center/cover no-repeat;
 }
 .tittle-my_skills{
-	text-align: center;
-	padding-top: 50px;
+	
 	font-size: 30px;
 	color: #263244;
 	transform:scale(1);
@@ -226,18 +229,15 @@ transform:scale(2);
 }
 .tittle-my_skills h3{
 	font-weight: bold;
+	padding-bottom: 100px; 
 }
 .main-my_skills{
-	padding: 160px 0px 100px 0px;
+	
  
 }
 .web-development,.development,.optimization,.marketing{
-	display: inline-block;
 	border: 0px solid #6d7682;
-	text-align: center;
-	margin-left: 80px;
-	padding-left: 50px; 
-	
+	padding-bottom: 50px; 
 }
 
 
@@ -281,13 +281,14 @@ transform:scale(2);
 .text_web-development h5,.text_development h5,.text_optimization h5,.text_marketing h5{
 	color: #263244;
 }
+
 .cases{
-	width: 100%;
+	
 	color: #263244;
-	margin: 100px 0px 100px 0px;
+	
 }
 .tittle_cases h3{
-	margin-left: 700px;
+	
 	font-size: 30px;
 	padding-bottom: 70px;
 	font-weight: bold;
@@ -296,19 +297,18 @@ transform:scale(2);
 }
 .tittle_cases h3:hover{
 transform:scale(1.5); 
-margin-right: 650px;
+
 }
 
 
 
 
 .tittle_cases h5 {
-	margin-left: 370px;
+	
 	color: #263244;
 }
 .link_cases,.texr_cases{
-	display: inline-block;
-	padding-right: 80px; 
+	
 }
 
 .texr_cases h4{
@@ -320,15 +320,12 @@ margin-right: 650px;
 	margin-bottom: 20px; 
 }
 
-.photo_cases{
-	width: 100px;
-	height: 400px;
-	padding-top: 40px;
-	padding-left: 135px;
+.two_cases{
+	padding: 50px;
 }
 .link_cases{
-	padding-left: 380px; 
-	padding-top: 40px;
+	 
+	
 }  
 
 .link_cases h4,.link_cases h5{
@@ -354,17 +351,16 @@ margin-right: 650px;
 }
 
 
-
 .price{
-	width: 100%;
+	
 	color: #263244;
-	margin: 150px 0px 100px 0px;
+	
 }
 .tittle_price{
-	margin-left: 490px; 
+	 
 }
 .tittle_price h2{
-	margin-left: 170px;
+	
 	margin-bottom: 50px;
 	font-size: 30px;
 	font-weight: bold;
@@ -373,7 +369,7 @@ transform:scale(1);
 }
 .tittle_price h2:hover{
 transform:scale(1.5); 
-margin-right: 500px;
+
 }
 
 
@@ -383,25 +379,44 @@ margin-right: 500px;
 	font-size: 20px;
 	padding-right:100px;
 	font-weight: bold; 
+	position: relative;
+	left: 220px;
+	text-align: justify;
+
 }
 .tittle_price select{
 	margin:10px 0px 40px 0px;
 	border: 4px solid #eeeeee;
 	background-color:#eeeeee;
-	padding: 10px 300px
+	padding: 10px 300px;
 }
 .tittle_price h5{
 	margin-bottom: 5px;
 	font-size: 17px;
 	font-weight: bold;
 }
+
+.tittle_price{
+	box-shadow: 2px 2px 10px #eeeeee;
+
+}
+.btn{
+	background-color: #00b6af;
+	color: white;
+	margin-top: 30px;
+}
+
+
+
+
+
+
 .statistics{
-	width: 100%;
+
 	background:url(../img/bg2.jpg) center/cover no-repeat fixed;
 }
 .tittle-statistics{
-	text-align: center;
-	padding-top: 50px;
+	
 	font-size: 30px;
 	color: #263244;
 	font-weight: bold;
@@ -420,30 +435,26 @@ transform:scale(1.5);
 	padding: 120px 0px 100px 0px;
 }
 .clients,.work_time,.projects,.Awards{
-	display: inline-block;
-	border: 0px solid #6d7682;
-	text-align: center;
-	margin-left: 120px;
-	padding-left: 50px; 
+	padding-bottom: 100px;
+	 
 }
 
 .text_clients h4,.text_work_time h4,.text_projects h4,.text_Awards h4{
 	color: #263244;
-	padding: 10px 0px 10px 0px;
-	font-size: 20px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-size: 30px;
 	font-weight: bold;
 }
 .text_clients h6,.text_work_time h6,.text_projects h6,.text_Awards h6{
 	color: #263244;
 }
+
 .Review{
-	width: 100%;
-	margin: 100px 0px 150px 0px;
 	color: #263244;
 }
 .heading_Review{
-text-align: center;
-	padding-bottom: 50px;
+
 	font-size: 30px;
 	font-weight: bold;
 transform:scale(1);
@@ -454,29 +465,15 @@ transform:scale(1.5);
 }
 
 
-.photo_Review{
-	text-align: center;
-	padding-bottom: 20px;
-}
-
-.text-Review{
-	text-align: center;
-	padding-top: 35px;
-}
-.text-Review p{
-	padding-bottom: 40px;
-}
-
 .contacts{
-	width: 100%;
-	padding: 100px 0px 70px 0px;
+	
 	color: #f4f5f6;
 	background:url(../img/bg3.jpg) center/cover no-repeat;
 }
 .tittle_contacts{
-	text-align: center;
+	
 	font-size: 30px;
-	padding-bottom: 70px;
+	
 	font-weight: bold;
 	transform:scale(1);
 	transition:all 1.5s;  
@@ -487,15 +484,11 @@ transform:scale(1.5);
 
 
 .text_contacts{
-	text-align: center;
+	
 }
 
 .location,.mail,.phone{
-	display: inline-block;
-	border: 0px solid #6d7682;
-	text-align: center;
-	margin-left: 220px;
-	padding-left: 50px; 
+	
 }
 .location_photo,.mail_photo,.phone_photo{
 	padding: 50px 0px 20px 0px; 
@@ -509,10 +502,10 @@ transform:scale(1.5);
 
 .message{
 	padding-top: 40px;
-	text-align: center;
+	
 }
 .message h3{
-	font-size: 20px;
+	font-size: 25px;
 	padding-bottom: 45px;
 	font-weight: bold;
 }
@@ -549,12 +542,11 @@ transform:scale(1.5);
 
 
 .maps{
-	width: 100%;
-	padding: 140px 0px 160px 0px;
+	
 	background:url(../img/bg4.jpg) center/cover no-repeat;
 }
 .maps-location input{
-	margin-left: 47%; 
+	 
 	border: 2px solid #ffffff;
 	background: #ffffff;
 	color:#000000;
@@ -572,18 +564,17 @@ transform:scale(1.5);
 
 }
 footer{
-	width: 100%;
-	height: 60px;
+	
 	background: #263244;
 }
 .footer-text{
 	color: #fff;
 	font-size: 14px;
 	line-height: 60px;
-	padding-left: 600px;
+	
 }
 
-
+}
 /*Загузчик*/
 .preloader {
   /*фиксированное позиционирование*/
@@ -653,4 +644,30 @@ footer{
 
 .loaded .preloader {
   display: none;
+}
+.custome-css
+.white-btn:visited{
+	color: white;
+}
+@media (max-width: 991px){
+	.tittle_container,.tittle_container h4,.tittle_container input{
+		color: white;
+		position: relative;
+		z-index: 3;
+	}
+	.main{
+		position: relative;
+	}
+	.tittle_container input{
+		border: 2px solid #fff;
+	}
+	.main::after{
+content:"";
+bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+position: absolute;
+background: rgba(0,0,0,0.4); 
+	}
 }

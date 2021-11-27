@@ -7,9 +7,10 @@
 	<meta name="robots" content="all">
 	<meta name="viewport" content="width=, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-
+<link rel="stylesheet" href="css/font-awesome.css">
 	<title>Андрей Браун - Веб-разработчик</title>
 
 
@@ -24,49 +25,94 @@
 </div>
 	<header>
 		<nav>
-			<div class="logo">Андрей Браун</div>
-			<div class="menu"><ul>
+			<div class="container">
+				<div class="row">
+					<div class="col-xxl-2 col-lg-3 col-5"><div class="logo">Андрей Браун</div></div>
+					<div class="px-0 col-xxl-6 col-xl-7 col-lg-5 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block "><div class="menu"><ul>
 				<li><a href="#">Обо мне</a></li>
 				<li><a href="#">Услуги</a></li>
 				<li><a href="#">Кейсы</a></li>
 				<li><a href="#">Прайс</a></li>
 				<li><a href="#">ОТзывы</a></li>
 				<li><a href="#">Контакты</a></li>
-			</ul></div>
+			</ul></div></div>
+				</div>
+			<div class="col-7 d-flex d-lg-none flex-column justify-center">
+				<div class="dropdown">
+  <a class="btn btn-outline-secondary white-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Нацигация
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    
+   				 <li><a class="dropdown-item" href="#">Обо мне</a></li>
+				<li><a class="dropdown-item" href="#">Услуги</a></li>
+				<li><a class="dropdown-item" href="#">Кейсы</a></li>
+				<li><a class="dropdown-item" href="#">Прайс</a></li>
+				<li><a class="dropdown-item" href="#">ОТзывы</a></li>
+				<li><a class="dropdown-item" href="#">Контакты</a></li>
+  </ul>
+</div>
+			</div>
+			</div>
+			
+			
 		</nav>
 
 	</header>
 	<main>
-	<section class="main">
-		<div class="tittle_container">
-			<h1>Привет <br> Я Андрей Браун</h1>
-			<h4>Фулл стек веб-разраблтчик</h4>
-			<input type="button" value="Обо мне">
-			<input type="button" value="Мои работы">
+	<section class="main h-100">
+		<div class="container h-100">
+			<div class="row align-items-center h-100">
+				<div class="col-lg-6 mt-5 pt-5">
+					<div class="tittle_container mt-5">
+					<h1>Привет <br> Я Андрей Браун</h1>
+					<h4>Фулл стек веб-разраблтчик</h4>
+					<input type="button" value="Обо мне">
+					<input type="button" value="Мои работы">
+					</div>
+				</div>
+			</div>
 		</div>
+		
 	</section>
 
 	<section class="summary">
-		<div class="tittle_summary">
-			<div class="about_me">
-				ОБО МНЕ
+		<div class="container">
+			<div class="row ">
+				<div class="col-12">
+					<div class="about_me">
+					<h2 class="text-center text-uppercase">ОБО МНЕ</h2>
+				</div></div>
 			</div>
-			<div class="photo">	
-				<img src="img/Summary.jpg">
+			<div class="row justify-content-center">
+				<div class="photo d-block col-12 text-center mb-5 mt-5">	
+					<img src="img/Summary.jpg">
+				</div>
+				<div class=" text-about_me col-8">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl ante<br>facilisis bidenbum dolor feugiat. Duis sed dapibus leo nec omare diam commodo nibh.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl ante<br>facilisis bidenbum dolor feugiat. Duis sed dapibus leo nec omare diam commodo nibh.</p>
+				<div class="row">
+					<div class="col-12">
+						<div class=" text-about_me text-center">
+				<input type="submit" value="Скачать резюме">
+				</div></div></div></div>
 			</div>
-			<div class="text-about_me">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl ante<br>facilisis bidenbum dolor feugiat. Duis sed dapibus leo nec omare diam commodo nibh.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl ante<br>facilisis bidenbum dolor feugiat. Duis sed dapibus leo nec omare diam commodo nibh.</p>
-			<input type="submit" value="Скачать резюме">
-			</div>
-		</div>
+		</div>		
 	</section>
-	<section class="my_skills">
-		<div class="tittle-my_skills">
-			<h3>ЧТО Я УМЕЮ</h3>
-		</div>
-		<div class="main-my_skills">
-			<div class="web-development">
+
+
+
+	<section class="my_skills mt-5">
+		<div class="container">
+				<div class="row ">
+		<div class="col-12">
+		<div class=" tittle-my_skills mt-5 ">
+			<h3 class="text-center mb-5">ЧТО Я УМЕЮ</h3>
+		</div></div>
+		<div class="mt-5 main-my_skills">
+			<div class="row">
+			<div class="web-development col-xl-3 col-md-6 col-sm-12 text-center">
 				<div class="photo_web-development">
 					<img src="img/comp.png">
 				</div>
@@ -75,7 +121,7 @@
 					<h5>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque natoque etaiam.</h5>
 				</div>
 			</div>
-			<div class="development">
+			<div class="development col-xl-3 col-md-6 col-sm-12 text-center">
 				<div class="photo_development">
 					<img src="img/develop.png">
 				</div>
@@ -84,7 +130,7 @@
 					<h5>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque.</h5>
 				</div>
 			</div>
-			<div class="optimization">
+			<div class="optimization col-xl-3 col-md-6 col-sm-12 text-center">
 				<div class="photo_optimization">
 					<img src="img/optimization.png">
 				</div>
@@ -93,7 +139,7 @@
 					<h5>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque natoque etaiam.</h5>
 				</div>
 			</div>
-			<div class="marketing">
+			<div class="marketing col-xl-3 col-md-6 col-sm-12 text-center">
 				<div class="photo_marketing">
 					<img src="img/marketing.png">
 				</div>
@@ -102,34 +148,59 @@
 					<h5>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque natoque.</h5>
 				</div>
 			</div>
-		</div>		
+			</div>
+			</div>
+		</div>	</div>	
 	</section>
+
+
 	<section class="cases">
-		<div class="display_cases">
-			<div class="tittle_cases">
-				<h3>КЕЙСЫ</h3>
-				<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl antefacilisis</h5>
-			</div>
-			<div class="photo_cases">
-				<img src="img/cases.jpg">
-			</div>
-			<div class="cases-client">
-				<div class="link_cases">
-					<h4>CLIENT:</h4>
-					<h5>Какая-то информация</h5>
-					<h4>WEBSITE:</h4>
-					<h5>http://www.somedomain.com</h5> 
-					<input type="submit" value="VISIT LIVE SITE">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="display_cases">
+						<div class="tittle_cases">
+							<h3 class="text-center mb-5">КЕЙСЫ</h3>
+							<h5 class="text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl antefacilisis</h5>
+						</div>
+					</div>
 				</div>
-				<div class="texr_cases">
-					<h4>Название проекта</h4>
-					<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna<br>	aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nellapariatue.</h5>
+			</div>		
+			<div class="row">
+				<div class="d-block col-12  mb-5">
+					<div class="photo_cases ">
+						<img class="img-fluid" src="img/cases.jpg">
+					</div>
 				</div>
 			</div>
-		</div>
+			<div class="two_cases">
+				<div class="row">
+					<div class="col-xl-3 col-lg-12">	
+						<div class="link_cases ">
+							<h4>CLIENT:</h4>
+							<h5>Какая-то информация</h5>
+							<h4>WEBSITE:</h4>
+							<h5>http://www.somedomain.com</h5> 
+							<input type="submit" value="VISIT LIVE SITE">
+						</div>
+					</div>	
+					<div class="col-xl-9 col-lg-12">
+						<div class="texr_cases">
+							<h4>Название проекта</h4>
+							<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna<br>	aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nellapariatue.</h5>
+						</div>
+					</div>
+				</div>
+			</div></div>
+		</div>	
 	</section>	
+	
+
 	<section class="price">
-		<div class="tittle_price">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-md-12 text-center">
+		<div class="tittle_price pt-5 pb-5">
 			<h2>Расчёт стоимости</h2>
 			<h4>ТИП САЙТА</h4>
 			<select name="list1" id="list"></select>
@@ -139,14 +210,25 @@
 			<select name="list1" id="list"></select>
 			<h5>Сроки 0</h5>
 			<h5>Стоимость 0</h5>
+<button type="button" class="btn">Оставить заявку</button>
 		</div>
+	</div>
+	</div>
+	</div>
+
+
+
 	</section>
 	<section class="statistics">
-		<div class="tittle-statistics">
-			<h3>НЕМНОГО СТАТИСТИКИ</h3>
-		</div>
-		<div class="main-statistics">
-			<div class="clients">
+		<div class="container">
+				<div class="row ">
+		<div class="col-12">
+		<div class="tittle-statistics mt-5">
+			<h3 class="text-center mb-5">НЕМНОГО СТАТИСТИКИ</h3>
+		</div></div></div>
+	<div class="main-statistics">
+		<div class="row">
+			<div class="clients col-xl-3 col-md-6 col-sm-12 text-center">
 				<div class="photo_clients">
 					<img src="img/clients.png">
 				</div>
@@ -155,7 +237,7 @@
 					<h6>СЧАСТЛИВЫХ КЛИЕНТОВ</h6>
 				</div>
 			</div>
-			<div class="work_time">
+			<div class="work_time col-xl-3 col-md-6 col-sm-12 text-center">
 				<div class="photo_work_time">
 					<img src="img/work_time.png">
 				</div>
@@ -164,7 +246,7 @@
 					<h6>ЧАСОВ РАБОТЫ</h6>
 				</div>
 			</div>
-			<div class="projects">
+			<div class="projects col-xl-3 col-md-6 col-sm-12 text-center">
 				<div class="photo_projects">
 					<img src="img/projects.png">
 				</div>
@@ -173,7 +255,7 @@
 					<h6>ПРОЕКТОВ ЗАВЕРШЕНО</h6>
 				</div>
 			</div>
-			<div class="Awards">
+			<div class="Awards col-xl-3 col-md-6 col-sm-12 text-center">
 				<div class="photo_Awards">
 					<img src="img/Awards.png">
 				</div>
@@ -183,77 +265,118 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	</div>
 	</section>
+	
+
+
 	<section class="Review">
-		<div class="tittle_Review">
-			<div class="heading_Review">
-				ОТЗЫВЫ
+		<div class="container">
+			<div class="row ">
+				<div class="col-12">
+					<div class="tittle_Review">
+						<div class="heading_Review">
+							<h2 class="text-center">ОТЗЫВЫ</h2>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="photo_Review">	
-					<img class="animate__animated animate__flip animate__slow animate__infinite" src="img/Review.jpg">
-			</div>
-			<div class="text-Review">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl ante<br>facilisis bidenbum dolor feugiat. Duis sed dapibus leo nec omare diam commodo nibh.</p>
-			<p>Михаил, Ген директор ПАО “Газпром”.</p>
-			
+				
+
+				<div class="row justify-content-center">
+					<div class="photo_Review col-12 text-center mb-5 mt-5">	
+						<img class="animate__animated animate__flip animate__slow animate__infinite" src="img/Review.jpg">
+					</div>
+					<div class="text-Review text-center col-8 mt-5">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl ante<br>facilisis bidenbum dolor feugiat. Duis sed dapibus leo nec omare diam commodo nibh.</p>
+					<p>Михаил, Ген директор ПАО “Газпром”.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
+
+
+
+
 	<section class="contacts">
+		<div class="container">
+			<div class="row ">
+				<div class="col-12">
 		<div class="tittle_contacts">
-			<h3>МОИ КОНТАКТЫ</h3>
-		</div>
+			<h3 class="text-center">МОИ КОНТАКТЫ</h3>
+		</div></div>
 		<div class="text_contacts">
-			<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec omare diamcoccodo</h5>
-		</div>
-		<div class="information_contacts">
-			<div class="location">
-				<div class="location_photo">
-					<img src="img/location.png">
-				</div>
-				<div class="text_location">
-					<h5>Санкт-Петербург<br>Невский проспект 11</h5>
-				</div>
-			</div>
-			<div class="mail">
-				<div class="mail_photo">
-					<img src="img/mail.png">
-				</div>
-				<div class="text_mail">
-					<h5>info@companyname.com</h5>
-				</div>
-			</div>
-			<div class="phone">
-				<div class="phone_photo">
-					<img src="img/phone.png">
-				</div>
-				<div class="text_phone">
-					<h5>+7 999 999-99-99</h5>
-				</div>
-			</div>
-		</div>
+			<h5 class="text-center mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec omare diamcoccodo</h5>
+		</div></div>
+		
+				<div class="information_contacts mt-5">
+					<div class="row">
+						<div class="location col-xl-4 col-md-6 col-sm-12 text-center mb-5">
+							<div class="location_photo">
+								<img src="img/location.png">
+							</div>
+							<div class="text_location">
+								<h5>Санкт-Петербург<br>Невский проспект 11</h5>
+							</div>
+						</div>
+						<div class="mail col-xl-4 col-md-6 col-sm-12 text-center mb-5">
+							<div class="mail_photo">
+								<img src="img/mail.png">
+							</div>
+							<div class="text_mail">
+								<h5>info@companyname.com</h5>
+							</div>
+						</div>
+						<div class="phone col-xl-4 col-md-6 col-sm-12 text-center mb-5">
+							<div class="phone_photo">
+								<img src="img/phone.png">
+							</div>
+							<div class="text_phone">
+								<h5>+7 999 999-99-99</h5>
+							</div>
+						</div>
+					</div>
+				</div>	
 		<div class="message">
-			<h3>ОСТАВЬ МНЕ СООБЩЕНИЕ</h3>
+			<div class="row">
+			<div class="col text-center col-12">
+			<h3 class="text-center mt-5">ОСТАВЬ МНЕ СООБЩЕНИЕ</h3>
 			<input type="text" name="text_input" value="" placeholder="Имя">
 			<input type="text" name="text_input" value="" placeholder="Email"><br>
 			<textarea name="name" id="1" cols="30" rows="10">Сообщение</textarea><br>
 			<div class="send">
 				<input type="submit" value="Отправить">
-			</div>
+			</div></div></div>
 		</div>
+	</div>
 	</section>
+
+
+
 	<section class="maps">
-		<div class="maps-location">
+		<div class="container">
+			<div class="row ">
+		<div class="maps-location text-center">
 			<input type="submit" value="IM HERE">
-		</div>
+		</div></div></div>
 	</section>
 	</main>
+	
+
+
 	<footer>
-			<div class="footer-text">
+		<div class="container">
+			<div class="row ">
+			<div class="footer-text text-center">
 				<h5>Copyright © 2021 Андрей Браун. Design by Web</h5>
-			</div>
+			</div></div></div>
 	</footer>
 
+
+
+<script type="text/javascript" src="js/bootstrap.bundle.min"></script>
 <script>
   window.onload = function () {
     document.body.classList.add('loaded_hiding');
