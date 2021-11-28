@@ -37,7 +37,7 @@
 				<li><a href="#">Контакты</a></li>
 			</ul></div></div>
 				</div>
-			<div class="col-7 d-flex d-lg-none flex-column justify-center">
+			<div class="col-7 d-flex d-lg-none flex-column justify-content-center">
 				<div class="dropdown">
   <a class="btn btn-outline-secondary white-btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
     Нацигация
@@ -198,27 +198,29 @@
 
 	<section class="price">
 		<div class="container">
-			<div class="row justify-content-center">
+			<div class="row justify-content-center w-100" >
 				<div class="col-lg-10 col-md-12 text-center">
-		<div class="tittle_price pt-5 pb-5">
-			<h2>Расчёт стоимости</h2>
-			<h4>ТИП САЙТА</h4>
-			<select name="list1" id="list"></select>
-			<h4>ДИЗАЙН</h4>
-			<select name="list1" id="list"></select>
-			<h4>АДАПТИВНОСТЬ</h4>
-			<select name="list1" id="list"></select>
-			<h5>Сроки 0</h5>
-			<h5>Стоимость 0</h5>
-<button type="button" class="btn">Оставить заявку</button>
+					<div class="tittle_price pt-5 pb-5">
+						<h2>Расчёт стоимости</h2>
+						<h4 class="mx-auto" style="width: 630px;">ТИП САЙТА</h4>
+						<select  name="list1" id="list"></select>
+						<h4 class="mx-auto" style="width: 630px;">ДИЗАЙН</h4>
+						<select name="list1" id="list"></select>
+						<h4 class="mx-auto" style="width: 630px;">АДАПТИВНОСТЬ</h4>
+						<select name="list1" id="list"></select>
+						<h5 class="mx-auto" style="width: 630px;">Сроки 0</h5>
+						<h5 class="mx-auto" style="width: 630px;">Стоимость 0</h5>
+						<button type="button" class="btn">Оставить заявку</button>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-	</div>
-	</div>
-
-
-
 	</section>
+
+
+
+
+
 	<section class="statistics">
 		<div class="container">
 				<div class="row ">
@@ -341,16 +343,32 @@
 				</div>	
 		<div class="message">
 			<div class="row">
-			<div class="col text-center col-12">
-			<h3 class="text-center mt-5">ОСТАВЬ МНЕ СООБЩЕНИЕ</h3>
-			<input type="text" name="text_input" value="" placeholder="Имя">
-			<input type="text" name="text_input" value="" placeholder="Email"><br>
-			<textarea name="name" id="1" cols="30" rows="10">Сообщение</textarea><br>
-			<div class="send">
-				<input type="submit" value="Отправить">
-			</div></div></div>
+				<div class="col text-center col-12">
+					<h3 class="text-center mt-5">ОСТАВЬ МНЕ СООБЩЕНИЕ</h3>
+				</div>
+			</div>
+			<div class="row justify-content-center mb-3">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<input type="text" name="text_input" value="" placeholder="Имя">
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<input type="text" name="text_input" value="" placeholder="Email"><br>
+				</div>
+			</div>
 		</div>
-	</div>
+		<div class="row justify-content-center">
+			<div class="message text-center col-xl-8 col-sm-12">
+				<textarea name="name" id="1" cols="30" rows="10">Сообщение</textarea><br>
+			</div>
+		</div>
+			<div class="send">
+				<div class="row">
+					<div class="text-center mt-5">
+						<input type="submit" value="Отправить">
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 

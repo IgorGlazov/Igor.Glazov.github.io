@@ -38,7 +38,7 @@ section{
 }
 .main{
 	width: 100%;
-	height: 100%;
+	height: 100vh !important;
 	background:url(../img/boy.png)90% 100%/auto no-repeat ,url(../img/bg.jpg) center/cover no-repeat; 
 	padding-bottom: 1000px;
 }
@@ -377,14 +377,12 @@ transform:scale(1.5);
 .tittle_price h4{
 	margin-bottom: 10px;
 	font-size: 20px;
-	padding-right:100px;
 	font-weight: bold; 
-	position: relative;
-	left: 220px;
 	text-align: justify;
-
+	width-right: 100px;
 }
 .tittle_price select{
+	
 	margin:10px 0px 40px 0px;
 	border: 4px solid #eeeeee;
 	background-color:#eeeeee;
@@ -394,6 +392,7 @@ transform:scale(1.5);
 	margin-bottom: 5px;
 	font-size: 17px;
 	font-weight: bold;
+	text-align: justify;
 }
 
 .tittle_price{
@@ -505,20 +504,24 @@ transform:scale(1.5);
 	
 }
 .message h3{
-	font-size: 25px;
+	font-size: 26px;
 	padding-bottom: 45px;
 	font-weight: bold;
 }
 .message input{
-	margin:10px 5px 40px 5px;
+	margin-bottom: 20px;
+	width: 100%;
 	border: 4px solid #eeeeee;
 	background-color:#eeeeee;
-	padding: 5px 70px;
+	padding: 5px 105px;
+
 }
 .message textarea{
+	width: 100%;
 	border: 4px solid #eeeeee;
 	background-color:#eeeeee;
 	padding: 1px 200px;
+
 }
 .send input{
 	border: 2px solid #ffffff;
@@ -671,3 +674,5 @@ position: absolute;
 background: rgba(0,0,0,0.4); 
 	}
 }
+
+
