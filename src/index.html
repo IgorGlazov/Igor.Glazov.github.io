@@ -20,17 +20,17 @@
      
 </head>
 <body>
-<!--	<div class="preloader">
+<div class="preloader">
   <div class="preloader__row">
     <div class="preloader__item"></div>
     <div class="preloader__item"></div>
   </div>
-</div>-->
+</div>
 	<header>
 		<nav >
 			<div class="container">
 				<div class="row">
-					<div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Андрей Браун</div></div>
+					<div class="col-xxl-2 col-lg-3 col-7"><div  class="logo">Андрей Браун</div></div>
 						<div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block ">
 							<div class="menu"><ul>
 							<li ><a class="" href="#about_me">Обо мне</a></li>
@@ -72,28 +72,9 @@
 					<div class="tittle_container mt-5">
 					<h1>Привет <br> Я Андрей Браун</h1>
 					<h4>Фулл стек веб-разраблтчик</h4>
-					<input  type="button" value="Обо мне">
+					<input data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" value="Обо мне " >
 					<input type="button" value="Мои работы">
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+				
 					</div>
 				</div>
 			</div>
@@ -126,7 +107,24 @@
 	</section>
 
 
-
+	
+<div class="modal fade" id="exampleModal"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="exampleModalLabel">Иноформация</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Здравствуйте! Я занимаюсь разработкой и созданием сайтов. За подробной информацией о заказе и стоимоти приобретения сайта вы можете посмотреть ниже.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger text-end" data-bs-dismiss="modal">Закрыть</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 	<section id="my_skills" class="my_skills mt-5">
 		<div class="container">
 				<div class="row ">
@@ -195,13 +193,13 @@
 					<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/cases.jpg"href="img/cases.jpg" class="d-block w-100" alt="...">
+      <img src="img/cases.jpg"href="img/cases.jpg" class="d-block w-100 image-link" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img/cases.jpg" href="img/cases.jpg" class="d-block w-100" alt="...">
+      <img src="img/cases.jpg" href="img/cases.jpg" class="d-block w-100 image-link" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img/cases.jpg" href="img/cases.jpg" class="d-block w-100" alt="...">
+      <img src="img/cases.jpg" href="img/cases.jpg" class="d-block w-100 image-link" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
@@ -246,14 +244,26 @@
 					<div class="tittle_price pt-5 pb-5">
 						<h2>Расчёт стоимости</h2>
 						<h4 class="mx-auto mb-3" >ТИП САЙТА</h4>
-						<select class="mb-3" name="list1" id="list"></select>
+						<select class="mb-3" name="list1" id="list">
+							<option value="0">Визитка</option>
+							<option value="1" selected>Комерческий</option>	
+							<option value="2">Интернет-магазин</option>	
+						</select>
 						<h4 class="mx-auto mb-3" >ДИЗАЙН</h4>
-						<select class="mb-3" name="list1" id="list"></select>
+						<select class="mb-3" name="list1" id="list">
+							<option value="0">Шаблонный</option>
+							<option value="1" selected>Уникальный</option>	
+							<option value="2">С паралакс-эффектом</option>	
+						</select>
 						<h4 class="mx-auto mb-3" >АДАПТИВНОСТЬ</h4>
-						<select class=" mb-3" name="list1" id="list"></select>
-						<h5 class="mx-auto mb-3" >Сроки 0</h5>
-						<h5 class="mx-auto mb-3" >Стоимость 0</h5>
-						<button type="button" class="btn btn-green">Оставить заявку</button>
+						<select class=" mb-3" name="list1" id="list">
+							<option value="0">Обычная</option>
+							<option value="1" selected>Адаптивная</option>	
+							<option value="2">На Bootstrap</option>	
+						</select>
+						<h5 class="mx-auto mb-3"  id="js1-result" >Сроки:</h5>
+						<h5 class="mx-auto mb-3"  id="js2-result">Стоимость:</h5>
+						<button id="js-button" type="button" class="btn btn-green">Оставить заявку</button>
 					</div>
 				</div>
 			</div>
@@ -465,7 +475,7 @@
 <script src="js/wow.min.js"></script>
 <script src="js/fotorama.js"></script>
 <script src="js/myScript.js"></script>
-<!--<script>
+<script>
   window.onload = function () {
     document.body.classList.add('loaded_hiding');
     window.setTimeout(function () {
@@ -473,7 +483,7 @@
       document.body.classList.remove('loaded_hiding');
     }, 500);
   }
-</script>-->
+</script>
 
 </body>
 
