@@ -1,8 +1,8 @@
 "use strict"
 
 	let matrix =[
-		[5000,10000,20000], /* 0 строка*/
-		[1,		2,		3], /* 1 строка*/
+		[5000,10000,20000],  
+		[1,		2,		3],  
 	];
 
 	let matrixTwo =[
@@ -34,6 +34,14 @@ class User {
   	}
   }
 
+AskStyle(){
+  	style = prompt('Какой стиль сайта вы хотите? 0-Шаблонный 1-Уникальный 2-С паралакс-эффектом');
+  	if (style > 2) {
+  		alert( 'Вы выбрали не существующий вариант!' );
+  		this.AskStyle();
+  	}
+  }
+
   AskVerstka(){
 	verstka = prompt('Какой вид верстки сайта вы хотите? 0-Обычная 1-Адаптивная 2-На Bootstrap');
 	if (verstka > 2) {
@@ -42,14 +50,7 @@ class User {
   	}
   }
 
-  AskStyle(){
-  	style = prompt('Какой стиль сайта вы хотите? 0-Шаблонный 1-Уникальный 2-С паралакс-эффектом');
-  	if (style > 2) {
-  		alert( 'Вы выбрали не существующий вариант!' );
-  		this.AskStyle();
-  	}
-  }
-
+  
   	Enter(){
 		console.log(matrix[0][sait], matrixTwo[0][verstka], matrixThree[0][style]);
 		console.log('Стоимость сайта:' + (matrix[0][sait] + matrixTwo[0][verstka] + matrixThree[0][style]) + 'руб');
@@ -63,20 +64,61 @@ class User {
 }
 var user = new User("");
 user.AskSait();
-user.AskVerstka();
 user.AskStyle();
+user.AskVerstka();
 user.Enter();
+$(document).ready(function(){
+$(window).scroll(() =>{
+	let scrollDistance = $(window).scrollTop();
+
+
+
+	$(".section").each((i,el) =>{
+
+		if($(el).offset().top - $("nav").outerHeight() <= scrollDistance){
+			$("nav a").each((i, el) => {
+				if ($(el).hasClass("active")){
+					$(el)removeClass("active");
+				}
+			});
+
+			$('nav li:eq('+ i +')').find('a').addClass("active");
+		}
+	});
+});
 
 
 
 
+$('a[href^="#"').click(function(){
+	let valHref = $(this).attr("href");
+	$('html,body').animate({scrollTop: $(valHref).offset().top - 20 + "px"});
+});
 
 
 
+	let options = {threshold: [0.5]};
+	  let observer = new IntersectionObserver (onEntry, options);
+	  let elements = $('.element-animation');
+	  elements.each((i,el) =>y{
+	  	observer.observe(el);
+	  }); 
+
+funcrtion.onEntry (entry){
+	entry.forEach(change =>{
+		if (change.isIntersecting){
+			change.target.classlist.add('show-animation')
+		}
+	});
+}
 
 
 
+$(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+});
 
 
+});
 
 
