@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
 <link rel="stylesheet" href="css/font-awesome.css">
-	<title>Андрей Браун - Веб-разработчик</title>
+	<title>Игорь Глазов - Веб-разработчик</title>
 
 
      
@@ -27,17 +27,17 @@
   </div>
 </div>
 	<header>
-		<nav >
+		<nav class="main-menu" >
 			<div class="container">
 				<div class="row">
-					<div class="col-xxl-2 col-lg-3 col-7"><div  class="logo">Андрей Браун</div></div>
-						<div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block ">
+					<div class="col-xxl-2 col-lg-3 col-7"><div  class="logo">Игорь Глазов</div></div>
+						<div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-0 d-none d-lg-block ">
 							<div class="menu"><ul>
-							<li ><a class="" href="#about_me">Обо мне</a></li>
+							<li ><a class="active" href="#about_me">Обо мне</a></li>
 							<li ><a class="" href="#my_skills">Услуги</a></li>
 							<li ><a class="" href="#cases">Кейсы</a></li>
 							<li ><a class="" href="#price">Прайс</a></li>
-							<li><a class="" href="#Review">Отзывы</a></li>
+							<li ><a class="" href="#Review">Отзывы</a></li>
 							<li ><a class="" href="#contacts">Контакты</a></li>
 							</ul>
 							</div>
@@ -70,10 +70,10 @@
 			<div class="row align-items-center h-100">
 				<div class="col-lg-6 mt-5 pt-5">
 					<div class="tittle_container mt-5">
-					<h1>Привет <br> Я Андрей Браун</h1>
+					<h1>Привет <br> Я Игорь Глазов</h1>
 					<h4>Фулл стек веб-разраблтчик</h4>
 					<input data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" value="Обо мне " >
-					<input type="button" value="Мои работы">
+					<input type="button" data-bs-toggle="modal" data-bs-target="#Modal" value="Обратная связь">
 				
 					</div>
 				</div>
@@ -82,26 +82,30 @@
 		</div>
 	</section>
 
-	<section class="summary" id="about_me">
+	<section class="section summary" id="about_me">
 		<div class="container">
 			<div class="row ">
 				<div class="col-12">
 					<div class="about_me">
-					<h2 class="text-center text-uppercase">ОБО МНЕ</h2>
-				</div></div>
+						<h2 class="text-center text-uppercase wow animate__animated animate__bounce" >ОБО МНЕ</h2><div class="line"></div>
+					</div>
+				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="photo d-block col-12 text-center mb-5 mt-5">	
-					<img data-target="123" class="img-fluid d-block mx-auto image-link" src="img/Summary.jpg" href="img/Summary.jpg">
+					<img data-target="123" class="img-fluid d-block mx-auto" src="img/Summary.jpg" >
 				</div>
-				<div class=" text-about_me col-8">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl ante<br>facilisis bidenbum dolor feugiat. Duis sed dapibus leo nec omare diam commodo nibh.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl ante<br>facilisis bidenbum dolor feugiat. Duis sed dapibus leo nec omare diam commodo nibh.</p>
-				<div class="row">
-					<div class="col-12">
-						<div class=" text-about_me text-center">
-				<input type="submit" value="Скачать резюме">
-				</div></div></div></div>
+			<div class=" text-about_me text-center col-8">
+				<p>Меня зовут - Игорь Глазов, разработаю для вас полностью адаптированный под все виды устройств сайт. При сдачи высылаю все доступы от админ панели и хостинга.</p>
+				<p>Учту ваши пожелания, выполню точно в срок! Работаю по вашему примеру.</p>
+			<div class="row">
+				<div class="col-12">
+					<div class=" text-about_me text-center">
+						<input type="submit" value="Скачать резюме">
+					</div>
+				</div>
+			</div>
+				</div>
 			</div>
 		</div>		
 	</section>
@@ -116,7 +120,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Здравствуйте! Я занимаюсь разработкой и созданием сайтов. За подробной информацией о заказе и стоимоти приобретения сайта вы можете посмотреть ниже.
+        Здравствуйте! Я занимаюсь разработкой и созданием сайтов. За подробной информацией о заказе и стоимоcти приобретения сайта вы можете посмотреть ниже.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger text-end" data-bs-dismiss="modal">Закрыть</button>
@@ -125,96 +129,146 @@
     </div>
   </div>
 </div>
-	<section id="my_skills" class="my_skills mt-5">
+
+<!--Модальное окно с формой-->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+      	<!-- Форма для модального окна-->
+        <form action="php/mail.php" method="post">
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" name="user_email" required class="form-control" id="inputEmail3">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Телефон</label>
+    <div class="col-sm-10">
+      <input type="phone" name="user_phone" required class="form-control" id="inputTel">
+    </div>
+  </div>
+  <fieldset class="row mb-3">
+    <legend class="col-form-label col-sm-6 pt-0">Вы в первый раз на этом сайте?</legend>
+    <div class="col-sm-6">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="radios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Да
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="radios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          Нет
+        </label>
+      </div>
+    </div>
+  </fieldset>
+  <div class="row mb-3">
+    <div class="col-sm-6 offset-sm-6">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" name="chek" for="gridCheck1">
+          Пользовательское соглашение
+        </label>
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
+<!---->
+
+
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!---->
+
+
+	<section id="my_skills" class="section my_skills mt-5">
 		<div class="container">
 				<div class="row ">
-		<div class="col-12">
-		<div class=" tittle-my_skills mt-5 ">
-			<h3 class="text-center mb-5">ЧТО Я УМЕЮ</h3>
-		</div></div>
-		<div class="mt-5 main-my_skills">
-			<div class="row">
-			<div class="web-development col-xl-3 col-md-6 col-sm-12 text-center">
-				<div class="photo_web-development">
-					<img src="img/comp.png">
+					<div class="col-12">
+						<div class=" tittle-my_skills mt-5 ">
+							<h3 class="text-center mb-5 animate__fadeInLeftBig wow animate__animated">ЧТО Я УМЕЮ<div class="line"></div></h3>
+						</div>
+					</div>
+				<div class="mt-5 main-my_skills">
+					<div class="row">
+						<div class="web-development col-xl-3 col-md-6 col-sm-12 text-center">
+							<div class="photo_web-development">
+								<img src="img/comp.png">
+							</div>
+							<div class="text_web-development wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+								<h4>Веб-дизайн</h4>
+								<h5>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque natoque etaiam.</h5>
+							</div>
+						</div>
+						<div class="development col-xl-3 col-md-6 col-sm-12 text-center">
+							<div class="photo_development">
+								<img src="img/develop.png">
+							</div>
+							<div class="text_development wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+								<h4>Разработка</h4>
+								<h5>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque.</h5>
+							</div>
+						</div>
+						<div class="optimization col-xl-3 col-md-6 col-sm-12 text-center">
+							<div class="photo_optimization">
+								<img src="img/optimization.png">
+						</div>
+							<div class="text_optimization wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+								<h4>СЕО-оптимизация</h4>
+								<h5>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque natoque etaiam.</h5>
+							</div>
+						</div>
+					<div class="marketing col-xl-3 col-md-6 col-sm-12 text-center">
+						<div class="photo_marketing">
+							<img src="img/marketing.png">
+						</div>
+						<div class="text_marketing wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+							<h4>Маркетинг</h4>
+							<h5>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque natoque.</h5>
+						</div>
+					</div>
 				</div>
-				<div class="text_web-development">
-					<h4>Веб-дизайн</h4>
-					<h5>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque natoque etaiam.</h5>
-				</div>
-			</div>
-			<div class="development col-xl-3 col-md-6 col-sm-12 text-center">
-				<div class="photo_development">
-					<img src="img/develop.png">
-				</div>
-				<div class="text_development">
-					<h4>Разработка</h4>
-					<h5>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque.</h5>
-				</div>
-			</div>
-			<div class="optimization col-xl-3 col-md-6 col-sm-12 text-center">
-				<div class="photo_optimization">
-					<img src="img/optimization.png">
-				</div>
-				<div class="text_optimization">
-					<h4>СЕО-оптимизация</h4>
-					<h5>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque natoque etaiam.</h5>
-				</div>
-			</div>
-			<div class="marketing col-xl-3 col-md-6 col-sm-12 text-center">
-				<div class="photo_marketing">
-					<img src="img/marketing.png">
-				</div>
-				<div class="text_marketing">
-					<h4>Маркетинг</h4>
-					<h5>Lorem ipsum dolor sit amet placerat<br>facilisis felis mi in tempus eleifend<br>pellentesque natoque.</h5>
-				</div>
-			</div>
-			</div>
 			</div>
 		</div>	</div>	
 	</section>
 
 
-	<section id="cases" class="cases">
+	<section id="cases" class="section cases">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<div class="display_cases">
 						<div class="tittle_cases">
-							<h3 class="text-center mb-5">КЕЙСЫ</h3>
-							<h5 class="text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl antefacilisis</h5>
+							<h3 class="text-center mb-2 wow animate__animated animate__flip">КЕЙСЫ <div class="line"></div></h3>
+						</div>
+						</div>
+							<h5 class="text-center mb-5">На слайдере представленны ранее сделанные мной работы!</h5>
 						</div>
 					</div>
-				</div>
-			</div>		
+					<!--Слайдер-->
 			<div class="row">
 				<div class="d-block col-12  mb-5 justify-content-center">
 					<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+						<!--Первый слайд-->
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="img/cases.jpg"href="img/cases.jpg" class="d-block w-100 image-link" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/cases.jpg" href="img/cases.jpg" class="d-block w-100 image-link" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/cases.jpg" href="img/cases.jpg" class="d-block w-100 image-link" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Предыдущий</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Следующий</span>
-  </button>
-</div>
-
-				</div>
-			</div>
-			<div class="two_cases">
+      <div class="two_cases">
 				<div class="row">
 					<div class="col-xl-3 col-lg-12">	
 						<div class="link_cases ">
@@ -232,17 +286,79 @@
 						</div>
 					</div>
 				</div>
-			</div></div>
-		</div>	
+			</div>
+    </div>
+    <!--Второй слайд-->
+    <div class="carousel-item">
+      <img src="img/cases.jpg" href="img/cases.jpg" class="d-block w-100 image-link" alt="..."><div class="two_cases ">
+				<div class="row">
+					<div class="col-xl-3 col-lg-12">	
+						<div class="link_cases ">
+							<h4>CLIENT:</h4>
+							<h5>Какая-то информация</h5>
+							<h4>WEBSITE:</h4>
+							<h5>http://www.somedomain.com</h5> 
+							<input type="submit" value="VISIT LIVE SITE">
+						</div>
+					</div>	
+					<div class="col-xl-9 col-lg-12">
+						<div class="texr_cases">
+							<h4>Название проекта</h4>
+							<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna<br>	aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nellapariatue.</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+    <!--Третий слайд-->
+    <div class="carousel-item">
+      <img src="img/cases.jpg" href="img/cases.jpg" class="d-block w-100 image-link" alt="..."><div class="two_cases ">
+				<div class="row">
+					<div class="col-xl-3 col-lg-12">	
+						<div class="link_cases ">
+							<h4>CLIENT:</h4>
+							<h5>Какая-то информация</h5>
+							<h4>WEBSITE:</h4>
+							<h5>http://www.somedomain.com</h5> 
+							<input type="submit" value="VISIT LIVE SITE">
+						</div>
+					</div>	
+					<div class="col-xl-9 col-lg-12">
+						<div class="texr_cases">
+							<h4>Название проекта</h4>
+							<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod tempor incididunt ut labore et dolore magna<br>	aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>Duis aute dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nellapariatue.</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+  </div>
+  <!--Кнопки переключения-->
+  <div class="carousel-btn">
+  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+    <span class="visually-hidden ">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden carousel-color">Следующий</span>
+  </button></div>
+</div>
+				</div>
+			</div>
+
+			
+		</div>
+			
 	</section>	
 	
 
-	<section id="price" class="price">
+	<section id="price" class="section price">
 		<div class="container">
 			<div class="row justify-content-center w-100" >
 				<div class="col-lg-10 col-md-12 text-center">
 					<div class="tittle_price pt-5 pb-5">
-						<h2>Расчёт стоимости</h2>
+						<h2 class="wow animate__animated animate__fadeInLeft">Расчёт стоимости</h2>
 						<h4 class="mx-auto mb-3" >ТИП САЙТА</h4>
 						<select class="mb-3" name="list1" id="select-type">
 							<option value="0">Визитка</option>
@@ -263,7 +379,7 @@
 						</select>
 						<h5 class="mx-auto mb-3"  id="js1-result" >Сроки:</h5>
 						<h5 class="mx-auto mb-3"  id="js2-result">Стоимость:</h5>
-						<button id="js-button-result" type="button" class="btn btn-green">Оставить заявку</button>
+						<button id="js-button-result" type="button" class="animate__tada wow animate__animated btn btn-green" data-wow-delay="0.5s">Оставить заявку</button>
 					</div>
 				</div>
 			</div>
@@ -276,70 +392,73 @@
 
 	<section class="statistics">
 		<div class="container">
-				<div class="row ">
-		<div class="col-12">
-		<div class="tittle-statistics mt-5">
-			<h3 class="text-center mb-5">НЕМНОГО СТАТИСТИКИ</h3>
-		</div></div></div>
-	<div class="main-statistics">
-		<div class="row">
-			<div class="clients col-xl-3 col-md-6 col-sm-12 text-center">
-				<div class="photo_clients">
-					<img src="img/clients.png">
-				</div>
-				<div class="text_clients">
-					<h4 class="element-animation show-animation">120</h4>
-					<h6>СЧАСТЛИВЫХ КЛИЕНТОВ</h6>
+			<div class="row ">
+				<div class="col-12">
+					<div class="tittle-statistics mt-5">
+						<h3 class="text-center mb-5 animate__backInLeft wow animate__animated">НЕМНОГО СТАТИСТИКИ <div class="line"></div></h3>
+					</div>
 				</div>
 			</div>
-			<div class="work_time col-xl-3 col-md-6 col-sm-12 text-center">
-				<div class="photo_work_time">
-					<img src="img/work_time.png">
-				</div>
-				<div class="text_work_time">
-					<h4 class="element-animation show-animation">4,600</h4>
-					<h6>ЧАСОВ РАБОТЫ</h6>
-				</div>
-			</div>
-			<div class="projects col-xl-3 col-md-6 col-sm-12 text-center">
-				<div class="photo_projects">
-					<img src="img/projects.png">
-				</div>
-				<div class="text_projects">
-					<h4 class="element-animation show-animation">340</h4>
-					<h6>ПРОЕКТОВ ЗАВЕРШЕНО</h6>
-				</div>
-			</div>
-			<div class="Awards col-xl-3 col-md-6 col-sm-12 text-center">
-				<div class="photo_Awards">
-					<img src="img/Awards.png">
-				</div>
-				<div class="text_Awards">
-					<h4 class="element-animation show-animation">23</h4>
-					<h6>НАГРАД ПОЛУЧЕНО</h6>
+		
+			<div class="main-statistics">
+				<div class="row">
+					<div class="statistics-item wow animate__animated animate__backInUp col-xl-3 col-md-6 col-sm-12 text-center">
+						<div class="photo_statistic  element-animation">
+							<img src="img/clients.png">
+						</div>
+						<div class="text_statistics element-animation">
+							<h4 class="element-animation">120</h4>
+							<h6>СЧАСТЛИВЫХ КЛИЕНТОВ</h6>
+						</div>
+					</div>
+					<div class="statistics-item wow animate__animated animate__backInUp  col-xl-3 col-md-6 col-sm-12 text-center">
+						<div class="photo_statistic ">
+							<img src="img/work_time.png">
+						</div>
+						<div class="text_statistics  element-animation">
+							<h4 class="element-animation">4,600</h4>
+							<h6>ЧАСОВ РАБОТЫ</h6>
+						</div>
+					</div>
+					<div class="statistics-item wow animate__animated animate__backInUp  col-xl-3 col-md-6 col-sm-12 text-center">
+						<div class="photo_statistic">
+							<img src="img/projects.png">
+						</div>
+						<div class="text_statistics element-animation">
+							<h4 class="element-animation">340</h4>
+							<h6>ПРОЕКТОВ ЗАВЕРШЕНО</h6>
+						</div>
+					</div>
+					<div class="statistics-item  wow animate__animated animate__backInUp  col-xl-3 col-md-6 col-sm-12 text-center">
+						<div class="photo_statistic">
+							<img src="img/Awards.png">
+						</div>
+						<div class="text_statistics ">
+							<h4 class="element-animation">23</h4>
+							<h6>НАГРАД ПОЛУЧЕНО</h6>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	</div>
 	</section>
 	
 
 
-	<section id="Review" class="Review">
+	<section id="Review" class="section Review">
 		<div class="container">
 			<div class="row ">
 				<div class="col-12">
 					<div class="tittle_Review">
 						<div class="heading_Review">
-							<h2 class="text-center">ОТЗЫВЫ</h2>
+							<h2 class="text-center animate__fadeInDown wow animate__animated">ОТЗЫВЫ <div class="line"></div></h2>
 						</div>
 					</div>
 				</div>
-			</div>
+				
 				
 
-				<div class="row justify-content-center">
+				
 				
 				<div id="carouselExampleIndicators" class="carousel slide mb-5 mt-5" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -350,12 +469,30 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="img/Review.jpg" class="d-block mx-auto" alt="...">
+      <div class="row justify-content-center">
+      	<div class="text-Review text-center col-8 mt-5">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl ante<br>facilisis bidenbum dolor feugiat. Duis sed dapibus leo nec omare diam commodo nibh.</p>
+					<p>Михаил, Ген директор ПАО “Газпром”.</p>
+					</div>	
+					</div>	
     </div>
     <div class="carousel-item">
       <img src="img/Review.jpg" class="d-block mx-auto" alt="...">
+		<div class="row justify-content-center">
+      	<div class="text-Review text-center col-8 mt-5">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl ante<br>facilisis bidenbum dolor feugiat. Duis sed dapibus leo nec omare diam commodo nibh.</p>
+					<p>Михаил, Ген директор ПАО “Газпром”.</p>
+					</div>	
+					</div>	
     </div>
     <div class="carousel-item">
       <img src="img/Review.jpg" class="d-block mx-auto" alt="...">
+		<div class="row justify-content-center">
+      	<div class="text-Review text-center col-8 mt-5">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl ante<br>facilisis bidenbum dolor feugiat. Duis sed dapibus leo nec omare diam commodo nibh.</p>
+					<p>Михаил, Ген директор ПАО “Газпром”.</p>
+					</div>	
+					</div>	
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
@@ -367,11 +504,6 @@
     <span class="visually-hidden">Следующий</span>
   </button>
 </div>
-					<div class="text-Review text-center col-8 mt-5">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec omare diam. Sed commodo hibl ante<br>facilisis bidenbum dolor feugiat. Duis sed dapibus leo nec omare diam commodo nibh.</p>
-					<p>Михаил, Ген директор ПАО “Газпром”.</p>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -379,69 +511,70 @@
 
 
 
-	<section id="contacts" class="contacts">
+	<section id="contacts" class="section contacts">
 		<div class="container">
 			<div class="row ">
 				<div class="col-12">
-		<div class="tittle_contacts">
-			<h3 class="text-center">МОИ КОНТАКТЫ</h3>
-		</div></div>
-		<div class="text_contacts">
-			<h5 class="text-center mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo nec omare diamcoccodo</h5>
-		</div></div>
-		
+					<div class="tittle_contacts">
+						<h3 class="text-center animate__fadeInUpBig wow animate__animated">МОИ КОНТАКТЫ <div class="line"></div></h3>
+					</div>
+				</div>
+				<div class="text_contacts">
+					<h5 class="text-center mt-5 animate__fadeInUpBig wow animate__animated">В данном разделе, вы можете оставить мне сообщенме.</h5>
+				</div>
+			</div>
 				<div class="information_contacts mt-5">
 					<div class="row">
-						<div class="location col-xl-4 col-md-6 col-sm-12 text-center mb-5">
+						<div class="location col-xl-4 col-md-6 col-sm-12 text-center mb-5 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
 							<div class="location_photo">
 								<img src="img/location.png">
 							</div>
 							<div class="text_location">
-								<h5>Санкт-Петербург<br>Невский проспект 11</h5>
+								<h5>Пенза<br>Карпинского 6</h5>
 							</div>
 						</div>
-						<div class="mail col-xl-4 col-md-6 col-sm-12 text-center mb-5">
+						<div class="mail col-xl-4 col-md-6 col-sm-12 text-center mb-5 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
 							<div class="mail_photo">
 								<img src="img/mail.png">
 							</div>
 							<div class="text_mail">
-								<h5>info@companyname.com</h5>
+								<h5>igor.glazov.01@mail.ru</h5>
 							</div>
 						</div>
-						<div class="phone col-xl-4 col-md-6 col-sm-12 text-center mb-5">
+						<div class="phone col-xl-4 col-md-6 col-sm-12 text-center mb-5 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
 							<div class="phone_photo">
 								<img src="img/phone.png">
 							</div>
 							<div class="text_phone">
-								<h5>+7 999 999-99-99</h5>
+								<a class="text_phone" href="tel:89374151607">+7 937 415-16-07</a>
 							</div>
 						</div>
 					</div>
 				</div>	
-		<div class="message">
-			<div class="row">
-				<div class="col text-center col-12">
-					<h3 class="text-center mt-5">ОСТАВЬ МНЕ СООБЩЕНИЕ</h3>
-				</div>
-			</div>
-			<div class="row justify-content-center mb-3">
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<input type="text" name="text_input" value="" placeholder="Имя">
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<input type="text" name="text_input" value="" placeholder="Email"><br>
-				</div>
-			</div>
-		</div>
-		<div class="row justify-content-center">
-			<div class="message text-center col-xl-8 col-sm-12">
-				<textarea name="name" id="1" cols="30" rows="10">Сообщение</textarea><br>
-			</div>
-		</div>
-			<div class="send">
+			<div class="message">
 				<div class="row">
-					<div class="text-center mt-5">
+					<div class="col text-center col-12">
+						<h3 class="text-center mt-5">ОСТАВЬ МНЕ СООБЩЕНИЕ</h3>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<input type="text" name="text_input" value="" placeholder="Имя">
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<input type="text" name="text_input" value="" placeholder="Email"><br>
+					</div>
+				</div>
+							<div class="row justify-content-center">
+					<div class="message text-center col-xl-8 col-lg-8 col-md-12 col-sm-12">
+						<textarea name="name" id="1" cols="30" rows="6"></textarea><br>
+					</div>
+				</div>
+				<div class="send">
+					<div class="row">
+						<div class="text-center mt-5">
 						<input type="submit" value="Отправить">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -449,14 +582,8 @@
 	</section>
 
 
-
-	<section class="maps">
-		<div class="container">
-			<div class="row ">
-		<div class="maps-location text-center">
-			<input type="submit" value="IM HERE">
-		</div></div></div>
-	</section>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2389.3515217032163!2d44.98476061606746!3d53.21154529250035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4141010922ed9a41%3A0x7570614975dc040d!2z0YPQuy4g0JrQsNGA0L_QuNC90YHQutC-0LPQviwgNiwg0J_QtdC90LfQsCwg0J_QtdC90LfQtdC90YHQutCw0Y8g0L7QsdC7LiwgNDQwMDEx!5e0!3m2!1sru!2sru!4v1641240080975!5m2!1sru!2sru" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	
 	</main>
 	
 
@@ -464,9 +591,11 @@
 	<footer>
 		<div class="container">
 			<div class="row ">
-			<div class="footer-text text-center">
-				<h5>Copyright © 2021 Андрей Браун. Design by Web</h5>
-			</div></div></div>
+			<div class="footer-text text-center mt-3 mb-3">
+				<h5>Copyright © 2022 Игорь Глазов. Design by Web</h5>
+			</div>
+		</div>
+	</div>
 	</footer>
 
 <script src="js/jquery-3.6.0.min.js"></script>
@@ -474,6 +603,7 @@
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/fotorama.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/myScript.js"></script>
 <script>
   window.onload = function () {
